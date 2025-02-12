@@ -1,14 +1,6 @@
-# Distillation Enhanced Social Graph Network (DESIGN).
+# KAN-Infused Social Recommendation: A Contrastive Graph LearningApproach with Bidirectional Feature Fusion(KBGRec)
 
 The supplementary files of paper: Revisiting Graph Neural Network based Social Recommendation.
-
-## Overview
-
-- design is the implementation of our Distillation Enhanced SocIal Graph Network (DESIGN).
-- design/config contains the default configuration of our models.
-- design/dataset contains four social recommendation datasets used for our experiment.
-- design/datautils contains codes that prepare data for the following training/testing.
-- design/model contains codes for the GNN-based social recommendation models.
 
 ## Requirements
 - Python 3.8.8
@@ -17,7 +9,7 @@ The supplementary files of paper: Revisiting Graph Neural Network based Social R
 - dgl 0.6.1
 
 ## Usage
-Execute the following scripts to train and test DESIGN on the flickr dataset with default hyper-parameters:
+Execute the following scripts to train and test KBGRec on the Yelp dataset with default hyper-parameters:
 
 ```
 python main.py --conf_name=design --data_name=yelp --train_model --test_model
@@ -25,7 +17,7 @@ python main.py --conf_name=design --data_name=yelp --train_model --test_model
 
 There are some key options of these scrips:
 
---conf_name: Choose the corresponding framework for training/testing. By default we use design. If one wants to train each model separately, one can set this value to design_no. Also, One can modify the configuration file in design/configs.
+--conf_name: Choose the corresponding framework for training/testing. By default we use KBGRec. One can modify the configuration file in KBGRec/configs.
 
 --data_name: Choose the dataset for training/testing. 
 

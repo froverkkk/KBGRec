@@ -83,7 +83,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_dir', default='data', type=str)
     parser.add_argument('--data_name', default='yelp', type=str)
     parser.add_argument('--out_path', default='output', type=str)
-    parser.add_argument('--conf_name', default='', type=str)
+    parser.add_argument('--conf_name', default='KBGRec', type=str)
 
     parser.add_argument('--emb_dim', default=64, type=int)
     parser.add_argument('--num_layers', default=2, type=int)
